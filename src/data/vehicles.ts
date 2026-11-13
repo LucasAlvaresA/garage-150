@@ -1,0 +1,160 @@
+import type { Vehicle } from "@/types/vehicle";
+
+export const vehicles: Vehicle[] = [
+  {
+    id: "honda-civic-touring-2020",
+    brand: "Honda",
+    model: "Civic",
+    version: "Touring",
+    year: 2020,
+    price: 129900,
+    category: "sedan",
+    image: "/images/vehicles/civic.jpg",
+    engine: "1.5 Turbo",
+    horsepower: 173,
+    transmission: "cvt",
+    fuel: "flex",
+    shortDescription: {
+      "pt-BR":
+        "Referência entre os sedãs médios, combina acabamento sólido, motor turbo e uma condução equilibrada.",
+      en: "A benchmark among mid-size sedans, combining solid finishing, a turbo engine and balanced handling.",
+    },
+    featured: true,
+  },
+  {
+    id: "volkswagen-jetta-comfortline-2020",
+    brand: "Volkswagen",
+    model: "Jetta",
+    version: "Comfortline",
+    year: 2020,
+    price: 109900,
+    category: "sedan",
+    image: "/images/vehicles/jetta.jpg",
+    engine: "1.4 TSI",
+    horsepower: 150,
+    transmission: "automatic6",
+    fuel: "flex",
+    shortDescription: {
+      "pt-BR":
+        "O sedã alemão que troca exageros por sofisticação discreta e um conjunto mecânico eficiente.",
+      en: "The German sedan that trades excess for quiet sophistication and an efficient powertrain.",
+    },
+  },
+  {
+    id: "toyota-corolla-xei-2021",
+    brand: "Toyota",
+    model: "Corolla",
+    version: "XEi",
+    year: 2021,
+    price: 132900,
+    category: "sedan",
+    image: "/images/vehicles/corolla.jpg",
+    engine: "2.0 Dynamic Force",
+    horsepower: 177,
+    transmission: "cvt",
+    fuel: "flex",
+    shortDescription: {
+      "pt-BR":
+        "A escolha racional que também sabe ser interessante: conforto, confiabilidade e um 2.0 vigoroso.",
+      en: "The rational choice that is also genuinely interesting: comfort, reliability and a punchy 2.0.",
+    },
+  },
+  {
+    id: "chevrolet-cruze-ltz-2022",
+    brand: "Chevrolet",
+    model: "Cruze",
+    version: "LTZ",
+    year: 2022,
+    price: 118900,
+    category: "sedan",
+    image: "/images/vehicles/cruze.jpg",
+    engine: "1.4 Turbo",
+    horsepower: 153,
+    transmission: "automatic6",
+    fuel: "flex",
+    shortDescription: {
+      "pt-BR":
+        "Design atlético, boa lista de equipamentos e um turbo que entrega fôlego no dia a dia.",
+      en: "Athletic design, a generous equipment list and a turbo that delivers everyday pace.",
+    },
+  },
+  {
+    id: "jeep-compass-longitude-2021",
+    brand: "Jeep",
+    model: "Compass",
+    version: "Longitude",
+    year: 2021,
+    price: 139900,
+    category: "suv",
+    image: "/images/vehicles/compass.jpg",
+    engine: "1.3 Turbo T270",
+    horsepower: 185,
+    transmission: "automatic6",
+    fuel: "flex",
+    shortDescription: {
+      "pt-BR":
+        "Postura de SUV, acabamento caprichado e o charme que só a Jeep tem.",
+      en: "True SUV stance, careful finishing and the charm that only a Jeep has.",
+    },
+  },
+  {
+    id: "volkswagen-t-cross-highline-2022",
+    brand: "Volkswagen",
+    model: "T-Cross",
+    version: "Highline",
+    year: 2022,
+    price: 134900,
+    category: "suv",
+    image: "/images/vehicles/tcross.jpg",
+    engine: "1.4 TSI",
+    horsepower: 150,
+    transmission: "automatic6",
+    fuel: "flex",
+    shortDescription: {
+      "pt-BR":
+        "Compacto por fora, espaçoso por dentro e com a solidez que se espera de um Volkswagen.",
+      en: "Compact outside, roomy inside, with the solidity you expect from a Volkswagen.",
+    },
+  },
+  {
+    id: "honda-hrv-exl-2021",
+    brand: "Honda",
+    model: "HR-V",
+    version: "EXL",
+    year: 2021,
+    price: 122900,
+    category: "suv",
+    image: "/images/vehicles/hrv.jpg",
+    engine: "1.8 16V",
+    horsepower: 139,
+    transmission: "cvt",
+    fuel: "flex",
+    shortDescription: {
+      "pt-BR":
+        "Versatilidade urbana, posição de dirigir elevada e a praticidade que conquistou o Brasil.",
+      en: "Urban versatility, a higher driving position and the practicality that won Brazil over.",
+    },
+  },
+  {
+    id: "hyundai-creta-platinum-2022",
+    brand: "Hyundai",
+    model: "Creta",
+    version: "Platinum",
+    year: 2022,
+    price: 128900,
+    category: "suv",
+    image: "/images/vehicles/creta.jpg",
+    engine: "2.0 16V",
+    horsepower: 167,
+    transmission: "automatic6",
+    fuel: "flex",
+    shortDescription: {
+      "pt-BR":
+        "Um SUV compacto de personalidade forte, bem equipado e confortável na cidade e na estrada.",
+      en: "A compact SUV with strong character, generous equipment and comfort in town and on the road.",
+    },
+  },
+];
+
+export const featuredVehicle =
+  vehicles.find((vehicle) => vehicle.featured) ?? vehicles[0];
