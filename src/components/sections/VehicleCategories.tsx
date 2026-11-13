@@ -14,7 +14,7 @@ export function VehicleCategories() {
     <section
       id="categorias"
       aria-labelledby="categorias-title"
-      className="scroll-mt-24 bg-bone py-20 text-ink sm:py-24 lg:py-32"
+      className="scroll-mt-20 bg-bone py-20 text-ink sm:py-24 lg:py-32"
     >
       <Container>
         <Reveal>
@@ -28,12 +28,12 @@ export function VehicleCategories() {
           />
         </Reveal>
 
-        <div className="mt-12 grid gap-4 sm:mt-14 sm:grid-cols-2 lg:grid-cols-4 lg:pb-12">
+        <div className="mt-10 grid gap-3 sm:mt-14 sm:grid-cols-2 lg:grid-cols-4 lg:pb-10">
           {categoryPanels.map((category, index) => (
             <Reveal
               key={category.id}
               className="h-full"
-              delay={index * 0.07}
+              delay={index * 0.06}
             >
               <CategoryPanelCard
                 category={category}

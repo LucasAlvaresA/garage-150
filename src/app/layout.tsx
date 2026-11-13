@@ -25,9 +25,9 @@ const plexMono = IBM_Plex_Mono({
   display: "swap",
 });
 
-const title = "Garagem 150 — Curadoria automotiva até R$ 150 mil";
+const title = "GARAGE 150 — Showroom automotivo";
 const description =
-  "Uma seleção editorial de carros interessantes do mercado brasileiro por até R$ 150 mil. Modelos que unem desempenho, conforto e personalidade.";
+  "Um showroom digital para apreciar design, presença e personalidade sobre quatro rodas.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   description,
   keywords: [
     "carros até 150 mil",
-    "curadoria automotiva",
+    "showroom automotivo",
     "carros interessantes",
     "mercado brasileiro",
     "sedans",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
         url: "/images/hero.jpg",
         width: 2600,
         height: 1733,
-        alt: "Garagem 150 — curadoria automotiva",
+        alt: "GARAGE 150 — showroom automotivo",
       },
     ],
   },

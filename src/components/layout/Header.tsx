@@ -3,7 +3,15 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import {
+  CarFront,
+  House,
+  Menu,
+  ScanEye,
+  Shapes,
+  X,
+  type LucideIcon,
+} from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { LanguageToggle } from "@/components/ui/LanguageToggle";
 import { Logo } from "@/components/ui/Logo";
@@ -11,11 +19,15 @@ import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/utils";
 import type { TranslationKey } from "@/i18n/translations";
 
-const navItems: Array<{ key: TranslationKey; href: string }> = [
-  { key: "nav.home", href: "/#inicio" },
-  { key: "nav.garage", href: "/#garagem" },
-  { key: "nav.categories", href: "/#categorias" },
-  { key: "nav.about", href: "/#sobre" },
+const navItems: Array<{
+  key: TranslationKey;
+  href: string;
+  Icon: LucideIcon;
+}> = [
+  { key: "nav.home", href: "/#inicio", Icon: House },
+  { key: "nav.categories", href: "/#categorias", Icon: Shapes },
+  { key: "nav.spotlight", href: "/#destaque", Icon: ScanEye },
+  { key: "nav.garage", href: "/#modelos", Icon: CarFront },
 ];
 
 export function Header() {
@@ -80,13 +92,18 @@ export function Header() {
                 aria-label={t("nav.primary")}
                 className="hidden items-center gap-7 lg:flex lg:justify-self-center"
               >
-                {navItems.map((item) => (
+                {navItems.map(({ key, href, Icon }) => (
                   <Link
-                    key={item.key}
-                    href={item.href}
-                    className="group relative font-mono text-[10px] uppercase tracking-[0.2em] text-white/60 transition-colors duration-300 hover:text-bone"
+                    key={key}
+                    href={href}
+                    className="group relative inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.18em] text-white/60 transition-colors duration-300 hover:text-bone"
                   >
-                    {t(item.key)}
+                    <Icon
+                      aria-hidden="true"
+                      className="h-3.5 w-3.5 text-accent"
+                      strokeWidth={1.6}
+                    />
+                    {t(key)}
                     <span
                       aria-hidden="true"
                       className="absolute -bottom-1.5 left-0 h-px w-0 bg-accent transition-all duration-300 group-hover:w-full"
@@ -96,11 +113,6 @@ export function Header() {
               </nav>
 
               <div className="flex items-center justify-end gap-3 sm:gap-4 lg:justify-self-end">
-                <span className="hidden items-center gap-2 border border-line px-3 py-2 font-mono text-[9px] uppercase tracking-[0.16em] text-white/65 md:flex">
-                  <span className="h-1.5 w-1.5 bg-accent" aria-hidden="true" />
-                  {t("header.priceBadge")}
-                </span>
-
                 <LanguageToggle />
 
                 <button
@@ -149,9 +161,9 @@ export function Header() {
                 aria-label={t("nav.primary")}
                 className="mt-5 flex flex-col"
               >
-                {navItems.map((item, index) => (
+                {navItems.map(({ key, href, Icon }, index) => (
                   <motion.div
-                    key={item.key}
+                    key={key}
                     initial={{ opacity: 0, y: 12 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{
@@ -161,12 +173,17 @@ export function Header() {
                     }}
                   >
                     <Link
-                      href={item.href}
+                      href={href}
                       onClick={() => setMenuOpen(false)}
                       className="group flex items-center justify-between border-b border-line py-5"
                     >
-                      <span className="font-display text-3xl font-bold uppercase tracking-[-0.03em] text-bone transition-colors group-hover:text-accent-bright">
-                        {t(item.key)}
+                      <span className="flex items-center gap-4 font-display text-3xl font-bold uppercase tracking-[-0.03em] text-bone transition-colors group-hover:text-accent-bright">
+                        <Icon
+                          aria-hidden="true"
+                          className="h-5 w-5 shrink-0 text-accent"
+                          strokeWidth={1.6}
+                        />
+                        {t(key)}
                       </span>
                       <span className="font-mono text-[10px] text-white/30">
                         {String(index + 1).padStart(2, "0")}
@@ -176,26 +193,10 @@ export function Header() {
                 ))}
               </nav>
 
-              <div className="mt-8 flex items-center justify-between border border-line p-4">
-                <div>
-                  <p className="font-mono text-[8px] uppercase tracking-[0.18em] text-white/40">
-                    {t("hero.priceLabel")}
-                  </p>
-                  <p className="mt-1 font-display text-xl font-bold text-bone">
-                    {t("header.priceBadge")}
-                  </p>
-                </div>
-                <span className="h-8 w-px bg-accent" aria-hidden="true" />
-              </div>
-
-              <p className="mt-6 max-w-xs text-sm leading-relaxed text-white/50">
-                {t("header.menuNote")}
-              </p>
-
               <div className="mt-auto flex items-center justify-between gap-4 pt-10">
                 <LanguageToggle size="large" />
                 <span className="text-right font-mono text-[8px] uppercase tracking-[0.18em] text-white/30">
-                  {t("hero.side")}
+                  GARAGE 150
                 </span>
               </div>
             </div>

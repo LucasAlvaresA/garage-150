@@ -36,7 +36,7 @@ export function CategoryPanelCard({
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-linear-to-t from-black via-black/25 to-black/10"
+        className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-black/25"
       />
       <div
         aria-hidden="true"

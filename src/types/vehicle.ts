@@ -9,6 +9,17 @@ export interface LocalizedText {
   en: string;
 }
 
+export interface VehicleFuelConsumption {
+  city: {
+    ethanol: number;
+    gasoline: number;
+  };
+  highway: {
+    ethanol: number;
+    gasoline: number;
+  };
+}
+
 export interface Vehicle {
   id: string;
   brand: string;
@@ -20,6 +31,10 @@ export interface Vehicle {
   image: string;
   engine: string;
   horsepower: number;
+  maximumSpeed: number;
+  zeroToHundred: number;
+  fuelConsumption: VehicleFuelConsumption;
+  fuelTankCapacity: number;
   transmission: TransmissionType;
   fuel: FuelType;
   shortDescription: LocalizedText;

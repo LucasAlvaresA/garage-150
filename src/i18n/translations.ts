@@ -6,8 +6,9 @@ export const defaultLocale: Locale = "pt-BR";
 
 const ptBR = {
   "nav.home": "Início",
-  "nav.garage": "Garagem",
-  "nav.categories": "Categorias",
+  "nav.garage": "Modelos",
+  "nav.categories": "Estilos",
+  "nav.spotlight": "Design em foco",
   "nav.about": "Sobre",
   "nav.primary": "Navegação principal",
 
@@ -18,20 +19,20 @@ const ptBR = {
   "header.menuLabel": "Navegação",
   "header.menuNote": "Curadoria independente de carros até R$ 150 mil.",
 
-  "hero.eyebrow": "Curadoria automotiva · Edição 01",
+  "hero.eyebrow": "Showroom automotivo",
   "hero.titleLine1": "SEU PRÓXIMO",
   "hero.titleLine2": "CARRO PODE",
   "hero.titleLine3a": "ESTAR",
   "hero.titleLine3b": "AQUI.",
   "hero.description":
-    "Uma seleção de carros que unem desempenho, conforto e personalidade por até R$ 150 mil.",
-  "hero.cta": "Explorar garagem",
+    "Um espaço para apreciar design, presença e personalidade sobre quatro rodas.",
+  "hero.cta": "Explore os estilos",
   "hero.priceLabel": "Teto de preço",
   "hero.priceValue": "R$ 150 mil",
   "hero.priceNote": "Toda a seleção dentro dessa faixa.",
-  "hero.scroll": "Role para descobrir",
-  "hero.caption": "Imagem ilustrativa",
-  "hero.side": "Seleção independente · 2026",
+  "hero.scroll": "Explore o showroom",
+  "hero.caption": "Uma coleção em movimento",
+  "hero.side": "Showroom automotivo · 2026",
   "hero.marqueeLabel": "Marcas na garagem",
 
   "featured.eyebrow": "01 / Seleção",
@@ -50,10 +51,14 @@ const ptBR = {
   "category.hatchback": "Hatchback",
   "category.pickup": "Picape",
 
-  "categories.eyebrow": "02 / Categorias",
+  "categories.eyebrow": "GARAGE 150 / ESTILOS",
   "categories.title": "ENCONTRE SEU ESTILO",
-  "categories.description": "Quatro jeitos de entender o prazer de dirigir.",
-  "categories.aside": "Uma garagem, quatro perspectivas.",
+  "categories.description":
+    "Silhuetas, espaços e propostas diferentes. Encontre o tipo de carro que combina com o seu olhar.",
+  "categories.aside": "Quatro estilos. Um só showroom.",
+  "categories.filter.label": "Filtrar veículos por categoria",
+  "categories.filter.all": "Todos",
+  "categories.modelsCount": "modelos",
   "categories.sedan.name": "Sedans",
   "categories.sedan.description":
     "Elegância discreta, conforto no dia a dia e uma boa dose de esportividade.",
@@ -66,22 +71,48 @@ const ptBR = {
   "categories.pickup.name": "Picapes",
   "categories.pickup.description":
     "Força para o trabalho e liberdade para o fim de semana.",
-  "spotlight.eyebrow": "03 / Destaque",
-  "spotlight.title": "DESTAQUE DA GARAGEM",
-  "spotlight.badge": "Escolha da redação",
+  "spotlight.eyebrow": "GARAGE 150 / EM FOCO",
+  "spotlight.title": "DESIGN EM FOCO",
+  "spotlight.category": "Estilo",
+  "spotlight.badge": "Em exposição",
+  "spotlight.modelDescription":
+    "Perfil baixo, linha de teto fluida e assinatura luminosa marcante definem o desenho do Civic Touring.",
   "spotlight.description":
-    "O Civic Touring é daqueles carros que não precisam gritar para chamar atenção. Acabamento cuidadoso, motor turbo e um equilíbrio raro entre conforto e prazer ao dirigir.",
+    "Linhas, proporções e detalhes que definem a presença de um modelo mesmo quando ele está parado.",
   "spotlight.quote": "Discreto por fora. Interessante em cada detalhe.",
   "spotlight.specsTitle": "Ficha do modelo",
   "spotlight.engine": "Motor",
   "spotlight.power": "Potência",
-  "spotlight.transmission": "Câmbio",
+  "spotlight.transmission": "Tipo de câmbio",
   "spotlight.fuel": "Combustível",
   "spotlight.year": "Ano modelo",
   "spotlight.price": "Preço de referência",
   "spotlight.priceNote":
     "Valor ilustrativo. Pode variar conforme condição, quilometragem, região e mercado. Não é uma cotação FIPE.",
   "spotlight.powerUnit": "cv",
+
+  "gallery.eyebrow": "GARAGE 150 / COLEÇÃO",
+  "gallery.title": "MODELOS EM EXPOSIÇÃO",
+  "gallery.description":
+    "Uma volta completa pela coleção. Oito modelos, cada um com identidade própria.",
+  "gallery.count": "modelos",
+  "gallery.viewDetails": "Ver detalhes de",
+  "gallery.closeDetails": "Fechar detalhes do veículo",
+  "gallery.details": "Detalhes do modelo",
+  "gallery.technicalDetails": "Ficha técnica",
+  "gallery.price": "Preço de referência",
+  "gallery.horsepower": "Cavalaria",
+  "gallery.maxSpeed": "Velocidade máxima",
+  "gallery.zeroToHundred": "0–100 km/h",
+  "gallery.cityConsumption": "Consumo — cidade (etanol/gasolina)",
+  "gallery.highwayConsumption": "Consumo — estrada (etanol/gasolina)",
+  "gallery.fuelTank": "Capacidade do tanque",
+  "gallery.transmissionType": "Tipo de câmbio",
+  "gallery.score": "Nota comparativa",
+  "gallery.comparisonNote":
+    "Notas comparativas em uma escala suavizada (3,9–10), relativas aos modelos desta coleção. Preço e 0–100: menor é melhor; consumo em km/l, potência, velocidade e tanque: maior é melhor.",
+  "gallery.referenceNote":
+    "Dados aproximados de referência, sujeitos a variação conforme versão e condições de uso. Consumo em etanol/gasolina; consulte a ficha do veículo para confirmação.",
 
   "transmission.cvt": "CVT",
   "transmission.automatic6": "Automático de 6 marchas",
@@ -135,22 +166,6 @@ const ptBR = {
   "footer.social.newsletter": "Newsletter",
 
 
-  "credits.eyebrow": "Arquivo / Imagens",
-  "credits.title": "CRÉDITOS DAS IMAGENS",
-  "credits.intro":
-    "As fotografias de veículos deste projeto são composições editoriais criadas a partir de imagens do Wikimedia Commons. Autores e licenças estão listados abaixo.",
-  "credits.vehicleTitle": "Veículos",
-  "credits.ambientTitle": "Fotografias de ambiente",
-  "credits.ambientText":
-    "As imagens de hero, categorias e seção sobre utilizam fotografias do Unsplash, sob a Licença Unsplash.",
-  "credits.author": "Autor",
-  "credits.license": "Licença",
-  "credits.viewSource": "Ver original",
-  "credits.back": "Voltar à garagem",
-  "credits.derivativeNote":
-    "Os recortes e composições derivados das imagens do Wikimedia Commons são disponibilizados sob as mesmas licenças indicadas.",
-  "credits.unsplashLink": "Licença Unsplash",
-
   "common.illustrative": "Imagem ilustrativa",
   "common.skipToContent": "Ir para o conteúdo",
 
@@ -168,8 +183,9 @@ export type TranslationKey = keyof typeof ptBR;
 
 const en: Record<TranslationKey, string> = {
   "nav.home": "Home",
-  "nav.garage": "Garage",
-  "nav.categories": "Categories",
+  "nav.garage": "Models",
+  "nav.categories": "Styles",
+  "nav.spotlight": "Design spotlight",
   "nav.about": "About",
   "nav.primary": "Main navigation",
 
@@ -180,20 +196,20 @@ const en: Record<TranslationKey, string> = {
   "header.menuLabel": "Navigation",
   "header.menuNote": "Independent curation of cars up to R$150k.",
 
-  "hero.eyebrow": "Automotive curation · Edition 01",
+  "hero.eyebrow": "Automotive showroom",
   "hero.titleLine1": "YOUR NEXT",
   "hero.titleLine2": "CAR MIGHT BE",
   "hero.titleLine3a": "RIGHT",
   "hero.titleLine3b": "HERE.",
   "hero.description":
-    "A selection of cars that combine performance, comfort and character for up to R$150k.",
-  "hero.cta": "Explore the garage",
+    "A space to appreciate design, presence and personality on four wheels.",
+  "hero.cta": "Explore the styles",
   "hero.priceLabel": "Price ceiling",
   "hero.priceValue": "R$150k",
   "hero.priceNote": "The whole selection within this range.",
-  "hero.scroll": "Scroll to discover",
-  "hero.caption": "Illustrative image",
-  "hero.side": "Independent selection · 2026",
+  "hero.scroll": "Explore the showroom",
+  "hero.caption": "A collection in motion",
+  "hero.side": "Automotive showroom · 2026",
   "hero.marqueeLabel": "Brands in the garage",
 
   "featured.eyebrow": "01 / Selection",
@@ -212,10 +228,14 @@ const en: Record<TranslationKey, string> = {
   "category.hatchback": "Hatchback",
   "category.pickup": "Pickup",
 
-  "categories.eyebrow": "02 / Categories",
+  "categories.eyebrow": "GARAGE 150 / STYLES",
   "categories.title": "FIND YOUR STYLE",
-  "categories.description": "Four ways to look at the joy of driving.",
-  "categories.aside": "One garage, four perspectives.",
+  "categories.description":
+    "Different silhouettes, spaces and purposes. Find the kind of car that speaks to you.",
+  "categories.aside": "Four styles. One showroom.",
+  "categories.filter.label": "Filter vehicles by category",
+  "categories.filter.all": "All",
+  "categories.modelsCount": "models",
   "categories.sedan.name": "Sedans",
   "categories.sedan.description":
     "Understated elegance, daily comfort and a healthy dose of sportiness.",
@@ -228,22 +248,48 @@ const en: Record<TranslationKey, string> = {
   "categories.pickup.name": "Pickups",
   "categories.pickup.description":
     "Strength for work and freedom for the weekend.",
-  "spotlight.eyebrow": "03 / Spotlight",
-  "spotlight.title": "GARAGE SPOTLIGHT",
-  "spotlight.badge": "Editors' pick",
+  "spotlight.eyebrow": "GARAGE 150 / IN FOCUS",
+  "spotlight.title": "DESIGN IN FOCUS",
+  "spotlight.category": "Style",
+  "spotlight.badge": "On display",
+  "spotlight.modelDescription":
+    "A low stance, flowing roofline and distinctive lighting signature define the Civic Touring's design.",
   "spotlight.description":
-    "The Civic Touring is the kind of car that doesn't need to shout to get noticed. Careful finishing, a turbo engine and a rare balance between comfort and driving pleasure.",
+    "Lines, proportions and details that define a model's presence even when it is standing still.",
   "spotlight.quote": "Understated outside. Interesting in every detail.",
   "spotlight.specsTitle": "Model specs",
   "spotlight.engine": "Engine",
   "spotlight.power": "Power",
-  "spotlight.transmission": "Transmission",
+  "spotlight.transmission": "Transmission type",
   "spotlight.fuel": "Fuel",
   "spotlight.year": "Model year",
   "spotlight.price": "Reference price",
   "spotlight.priceNote":
     "Illustrative value. May vary by condition, mileage, region and market. Not a FIPE quote.",
   "spotlight.powerUnit": "hp",
+
+  "gallery.eyebrow": "GARAGE 150 / COLLECTION",
+  "gallery.title": "MODELS ON DISPLAY",
+  "gallery.description":
+    "A complete look around the collection. Eight models, each with its own identity.",
+  "gallery.count": "models",
+  "gallery.viewDetails": "View details for",
+  "gallery.closeDetails": "Close vehicle details",
+  "gallery.details": "Model details",
+  "gallery.technicalDetails": "Technical specs",
+  "gallery.price": "Reference price",
+  "gallery.horsepower": "Horsepower",
+  "gallery.maxSpeed": "Top speed",
+  "gallery.zeroToHundred": "0–100 km/h",
+  "gallery.cityConsumption": "City consumption (ethanol/gasoline)",
+  "gallery.highwayConsumption": "Highway consumption (ethanol/gasoline)",
+  "gallery.fuelTank": "Fuel tank capacity",
+  "gallery.transmissionType": "Transmission type",
+  "gallery.score": "Comparative score",
+  "gallery.comparisonNote":
+    "Comparative scores use a softened 3.9–10 scale and are relative to this collection. Price and 0–100: lower is better; consumption in km/l, horsepower, speed and tank capacity: higher is better.",
+  "gallery.referenceNote":
+    "Approximate reference figures; values vary by trim and driving conditions. Consumption is shown as ethanol/gasoline; confirm with the vehicle's official specifications.",
 
   "transmission.cvt": "CVT",
   "transmission.automatic6": "6-speed automatic",
@@ -296,22 +342,6 @@ const en: Record<TranslationKey, string> = {
   "footer.social.youtube": "YouTube",
   "footer.social.newsletter": "Newsletter",
 
-
-  "credits.eyebrow": "Archive / Images",
-  "credits.title": "IMAGE CREDITS",
-  "credits.intro":
-    "The vehicle photographs in this project are editorial compositions built from Wikimedia Commons images. Authors and licenses are listed below.",
-  "credits.vehicleTitle": "Vehicles",
-  "credits.ambientTitle": "Ambient photography",
-  "credits.ambientText":
-    "Hero, category and about photographs use images from Unsplash under the Unsplash License.",
-  "credits.author": "Author",
-  "credits.license": "License",
-  "credits.viewSource": "View original",
-  "credits.back": "Back to the garage",
-  "credits.derivativeNote":
-    "The cut-outs and compositions derived from Wikimedia Commons images are made available under the same licenses listed above.",
-  "credits.unsplashLink": "Unsplash License",
 
   "common.illustrative": "Illustrative image",
   "common.skipToContent": "Skip to content",
